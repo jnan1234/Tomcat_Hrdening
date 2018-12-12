@@ -20,7 +20,7 @@ RUN rm -rf /usr/local/tomcat/webapps/docs
 
 
 # rename the manager and host-manager
-RUN mv /usr/local/tomcat/webapps/manager /usr/local/tomcat/webapps/controller
+RUN mv /usr/local/tomcat/webapps/manager /usr/local/tomcat/webapps/controll
 RUN mv /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/host-controller
 # hide the serverinfo
 RUN mkdir -p /usr/local/tomcat/lib/org/apache/catalina/util
