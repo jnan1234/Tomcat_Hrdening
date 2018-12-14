@@ -21,7 +21,7 @@ RUN rm -rf /usr/local/tomcat/webapps/docs
 
 # rename the manager and host-manager
 RUN mv /usr/local/tomcat/webapps/manager /usr/local/tomcat/webapps/controll
-RUN mv /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/host-controller
+RUN mv /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/host-controll
 # hide the serverinfo
 RUN mkdir -p /usr/local/tomcat/lib/org/apache/catalina/util
 RUN touch /usr/local/tomcat/lib/org/apache/catalina/util/ServerInfo.properties
