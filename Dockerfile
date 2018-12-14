@@ -8,11 +8,11 @@ RUN chown -R intense:intense $CATALINA_HOME
 
 
 # Add Binary files
-ADD context.xml /usr/local/tomcat/webapps/host-manager/META-INF/context.xml
-ADD context.xml /usr/local/tomcat/webapps/manager/META-INF/context.xml
-ADD tomcat-users.xml /usr/local/tomcat/conf/
-ADD server.xml /usr/local/tomcat/conf/
-ADD index.jsp /usr/local/tomcat/webapps/ROOT/
+ADD Tomcat_harden/context.xml /usr/local/tomcat/webapps/host-manager/META-INF/context.xml
+ADD Tomcat_harden/context.xml /usr/local/tomcat/webapps/manager/META-INF/context.xml
+ADD Tomcat_harden/tomcat-users.xml /usr/local/tomcat/conf/
+ADD Tomcat_harden/server.xml /usr/local/tomcat/conf/
+ADD Tomcat_harden/index.jsp /usr/local/tomcat/webapps/ROOT/
 
 # remove unwanted files
 RUN rm -rf /usr/local/tomcat/webapps/examples
